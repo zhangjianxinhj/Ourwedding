@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <title>登记</title>
+    <link rel="stylesheet" href="css/login.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--头部-->
+<nav class="navbar navbar-default navbar-fixed-top ">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="#" class="navbar-brand">Our Wedding</a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myCollapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse" id="myCollapse">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">首页</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">欢迎<span class="caret"></span> </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="register.html">登记</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">亲人</a></li>
+                        <li><a href="#">同学</a></li>
+                        <li><a href="#">同事</a></li>
+                        <li><a href="#">其他</a></li>
+                    </ul>
+                </li>
+                <li><a href="bless.html">祝福</a></li>
+                <li><a href="#">关于我们</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right" >
+                <li><a href="#mymodal" data-toggle="modal">登录</a></li>
+                <li><a href="#">注册</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--登录-->
+<div id="mymodal" class="modal text-center" data-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button data-dismiss="modal" type="button" class="close">&times;</button>
+                <h4> 欢迎登陆</h4>
+            </div>
+            <div class="modal-body">
+                <form action="" class="form-horizontal">
+                    <div class="form-group">
+                        <label for="txtName" class="control-label col-md-2">登录名:</label>
+                        <div class="col-md-7">
+                            <input type="text" id="txtName" class="form-control" value="" placeholder="请输入您的用户名/邮箱/手机号"/>
+                        </div>
+                        <span class="help-block col-md-3">
+                            输入6-18个字符
+                        </span>
+                    </div>
+                    <div class="form-group">
+                        <label for="txtPwd" class="control-label col-md-2">密&nbsp;&nbsp;&nbsp;&nbsp;码:</label>
+                        <div class="col-md-7">
+                            <input type="text" id="txtPwd" class="form-control" value="" placeholder="请输入您的密码"/>
+                        </div>
+                        <div class="col-md-3">
+                            <span class="help-block">字符不能重复</span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <form action="" class="form-inline">
+                    <button type="button" class="btn btn-default">登陆</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">忘记密码</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--主体-->
+<div class="login container">
+    <video id="bgvideo" src="res/birds.mp4" autoplay muted loop width="100%"></video>
+    <div class="box">
+        <form class="form-horizontal">
+            <!--用户名-->
+            <div class="form-group">
+                <div class="col-sm-2">
+                    <label for="uname" class="control-label">用户名：</label>
+                </div>
+                <div class="col-sm-5">
+                    <input type="text" class="form-control" placeholder="请输入用户名" autofocus name="uname" id="uname" required/>
+                </div>
+                <div class="col-sm-5">
+                    <span class="help-block">用户名可以包含数字、字母</span>
+                </div>
+            </div>
+
+            <!--密码-->
+            <div class="form-group">
+                <div class="col-sm-2">
+                    <label for="upwd" class="control-label">密码：</label>
+                </div>
+                <div class="col-sm-5">
+                    <input type="text" class="form-control" placeholder="请输入密码" autofocus name="upwd" id="upwd" required
+                           minlength="6" maxlength="12">
+                </div>
+                <div class="col-sm-5">
+                    <span class="help-block">密码长度在6~12位之间</span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-2">
+                    <label for="upwd" class="control-label">手机号：</label>
+                </div>
+                <div class="col-sm-5">
+                    <input type="tel" class="form-control" placeholder="请输入手机号"  >
+                </div>
+                <div class="col-sm-5">
+                    <span class="help-block">输入手机号以便联系</span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-2">
+                    <label for="upwd" class="control-label">邮箱：</label>
+                </div>
+                <div class="col-sm-5">
+                    <input type="email" class="form-control" placeholder="请输入邮箱"  >
+                </div>
+                <div class="col-sm-5">
+                    <span class="help-block"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-2">
+                    <label for="upwd" class="control-label">出生日期：</label>
+                </div>
+                <div class="col-sm-5">
+                    <input type="date" class="form-control" placeholder="请输入出生日期"  >
+                </div>
+                <div class="col-sm-5">
+                    <span class="help-block"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-2">
+                    <label for="upwd" class="control-label">备注：</label>
+                </div>
+                <div class="col-sm-5">
+                    <input type="text" class="form-control" placeholder="您有什么特别说明的吗"  >
+                </div>
+                <div class="col-sm-5">
+                    <span class="help-block"></span>
+                </div>
+            </div>
+
+            <!--提交按钮-->
+            <div class="form-group">
+                <div class="col-sm-5 col-sm-offset-2">
+                    <input type="button" value="提交注册信息" class="btn btn-success btn-block">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<!--底部-->
+<div class="bottom-section">
+    <div class="container">
+        <h3>欢迎来加我们的婚礼</h3>
+    </div>
+</div>
+<footer class="footer">
+    <div class="container">
+        <div class="copy">
+            <p>Copyright 2014-2017&nbsp;&nbsp;&nbsp;&nbsp;ZJx Hj集团及其附属公司 </p>
+            <p>本网站不做任何商业用途，仅供学习参考使用。</p>
+        </div>
+    </div>
+</footer>
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/bootlint.js"></script>
+<!--<script>-->
+    <!--bootlint.showLintReportForCurrentDocument([]);-->
+<!--</script>-->
+</body>
+</html>

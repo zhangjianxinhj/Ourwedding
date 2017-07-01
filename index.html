@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <title>our wedding</title>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--头部-->
+<nav class="navbar navbar-default navbar-fixed-top ">
+    <div class="container">
+        <div class="navbar-header">
+           <a href="#" class="navbar-brand">Our Wedding</a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myCollapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse" id="myCollapse">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">首页</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">欢迎<span class="caret"></span> </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="register.html">登记</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">亲人</a></li>
+                        <li><a href="#">同学</a></li>
+                        <li><a href="#">同事</a></li>
+                        <li><a href="#">其他</a></li>
+                    </ul>
+                </li>
+                <li><a href="bless.html">祝福</a></li>
+                <li><a href="#">关于我们</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right" >
+                <li><a href="#mymodal" data-toggle="modal">登录</a></li>
+                <li><a href="login.html">注册</a></li>
+            </ul>
+            <form action="" class="navbar-form navbar-right">
+                <div class="form-group has-feedback">
+                    <input type="text" class="form-control" placeholder="搜索"/>
+                    <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                </div>
+            </form>
+        </div>
+    </div>
+</nav>
+<!--登录-->
+<div id="mymodal" class="modal text-center" data-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button data-dismiss="modal" type="button" class="close">&times;</button>
+                <h4> 欢迎登陆</h4>
+            </div>
+            <div class="modal-body">
+                <form action="" class="form-horizontal">
+                    <div class="form-group">
+                        <label for="txtName" class="control-label col-md-2">登录名:</label>
+                        <div class="col-md-7">
+                            <input type="text" id="txtName" class="form-control" value="" placeholder="请输入您的用户名/邮箱/手机号"/>
+                        </div>
+                        <span class="help-block col-md-3">
+                            输入6-18个字符
+                        </span>
+                    </div>
+                    <div class="form-group">
+                        <label for="txtPwd" class="control-label col-md-2">密&nbsp;&nbsp;&nbsp;&nbsp;码:</label>
+                        <div class="col-md-7">
+                            <input type="text" id="txtPwd" class="form-control" value="" placeholder="请输入您的密码"/>
+                        </div>
+                        <div class="col-md-3">
+                        <span class="help-block">字符不能重复</span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <form action="" class="form-inline">
+                    <button type="button" class="btn btn-default">登陆</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">忘记密码</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--主体-->
+<section class="container">
+    <!--轮播-->
+    <div id="myCaro" class="carousel slide" data-ride="carousel" data-interval="2000">
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="images/myCaro1.jpg" alt=""/>
+                <div class="carousel-caption">
+                    <h1>我和她</h1>
+                    <h3>相识于2014</h3>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/myCaro2.jpg" alt=""/>
+                <div class="carousel-caption">
+                    <h1>我和她</h1>
+                    <h3>相知于2014</h3>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/myCaro3.jpg" alt=""/>
+                <div class="carousel-caption">
+                    <h1>我和她</h1>
+                    <h3>相恋于2014</h3>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/myCaro4.jpg" alt=""/>
+                <div class="carousel-caption">
+                    <h1>我和她</h1>
+                    <h3>相爱于2014</h3>
+                </div>
+            </div>
+        </div>
+        <a href="#myCaro" class="carousel-control left" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a href="#myCaro" class="carousel-control right" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+        <ul class="carousel-indicators">
+            <li data-target="#myCaro" data-slide-to="0" class="active"></li>
+            <li data-target="#myCaro" data-slide-to="1"></li>
+            <li data-target="#myCaro" data-slide-to="2"></li>
+            <li data-target="#myCaro" data-slide-to="3"></li>
+        </ul>
+    </div>
+
+    <!--欢迎您的到来-->
+    <div class="welcome-section">
+            <h2>欢迎大家的到来</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto at,
+                consequatur distinctio dolor eius expedita hic in necessitatibus nemo nobis
+                nulla odio pariatur provident quam rerum sequi velit voluptatem. Quia!lorem
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam asperiores
+                assumenda delectus doloremque dolorum eaque esse est harum ipsum laudantium
+                magnam magni neque omnis, quaerat reiciendis repellat sapiente sed sint.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquid aspernatur
+                dolor dolorem doloribus eligendi, eveniet iure libero maiores modi nihil nisi non
+                numquam optio quo soluta sunt tempora totam?
+            </p>
+        <div class="ws1 container clearfix">
+            <div class="row">
+                <div class="col-xs-6 box bounceIn text-center">
+                    <div class="img" >
+                        <img src="images/welcom1.jpg" class="img-responsive" alt=""/>
+                    </div>
+                    <div class="info">
+                        <p>张建新<br/>
+                            1988.12</p>
+                    </div>
+                </div>
+                <div class="col-xs-6  box bounceIn">
+                    <div class="img">
+                        <img src="images/welcom2.jpg" class="img-responsive" alt=""/>
+                    </div>
+                    <div class="info">
+                        <p>华静<br/>
+                            1989.03</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--我们的故事-->
+    <div class="story-section ">
+        <div class="container">
+            <h3>我们的爱情故事</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="images/st1.JPG" class="img-responsive" alt=""/>
+                    <div class="half-mask">
+                        <h4>那一年我们一起去三亚</h4>
+                        <p>Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit.
+                            Aliquam animi autem commodi consequatur
+                            dolor doloribus eveniet in ipsam itaque
+                            laboriosam, possimus repellat voluptatum.
+                            Aspernatur id iusto non repellendus saepe sapiente!</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/st2.JPG" class="img-responsive" alt=""/>
+                    <div class="half-mask">
+                        <h4>那一年你在欧洲我在陕西</h4>
+                        <p>Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit.
+                            Aliquam animi autem commodi consequatur
+                            dolor doloribus eveniet in ipsam itaque
+                            laboriosam, possimus repellat voluptatum.
+                            Aspernatur id iusto non repellendus saepe sapiente!</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/st3.JPG" class="img-responsive" alt=""/>
+                    <div class="half-mask">
+                        <h4>那一年我们终于领证了</h4>
+                        <p>Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit.
+                            Aliquam animi autem commodi consequatur
+                            dolor doloribus eveniet in ipsam itaque
+                            laboriosam, possimus repellat voluptatum.
+                            Aspernatur id iusto non repellendus saepe sapiente!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--我们的历程-->
+    <div id="lc">
+        <video class="bgvideo" src="res/birds.mp4" autoplay muted loop width="100%" ></video>
+        <ul class="nav nav-tabs">
+            <li class="active">
+                <a href="#tab1" data-toggle="tab">相识</a>
+            </li>
+            <li>
+                <a href="#tab2" data-toggle="tab">相知</a>
+            </li>
+            <li>
+                <a href="#tab3" data-toggle="tab">相爱</a>
+            </li>
+            <li>
+                <a href="#tab4" data-toggle="tab">相守</a>
+            </li>
+        </ul>
+        <!--2、内容组-->
+        <div class="tab-content">
+            <!--内容1-->
+            <div class="tab-pane active" id="tab1">
+                <div class="well">
+                    <h3>2014</h3>
+                    <p>2014年Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet
+                        atque cum cupiditate deleniti. Adipisci alias error pariatur quia totam.
+                        Adipisci architecto delectus nesciunt sequi. Laudantium rerum veniam
+                        voluptas voluptates!
+                        2014年Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet
+                        atque cum cupiditate deleniti. Adipisci alias error pariatur quia totam.
+                        Adipisci architecto delectus nesciunt sequi. Laudantium rerum veniam
+                        voluptas voluptates
+                        2014年Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet
+                        atque cum cupiditate deleniti. Adipisci alias error pariatur quia totam.
+                        Adipisci architecto delectus nesciunt sequi. Laudantium rerum veniam
+                        voluptas voluptates
+                        2014年Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet
+                        atque cum cupiditate deleniti. Adipisci alias error pariatur quia totam.
+                        Adipisci architecto delectus nesciunt sequi. Laudantium rerum veniam
+                        voluptas voluptates</p>
+                </div>
+            </div>
+            <!--内容2-->
+            <div class="tab-pane" id="tab2">
+                <div class="well">
+                    <h3>2015</h3>
+                    <p>2014年Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet
+                        atque cum cupiditate deleniti. Adipisci alias error pariatur quia totam.
+                        Adipisci architecto delectus nesciunt sequi. Laudantium rerum veniam
+                        voluptas voluptates!
+                        2014年Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet
+                        atque cum cupiditate deleniti. Adipisci alias error pariatur quia totam.
+                        Adipisci architecto delectus nesciunt sequi. Laudantium rerum veniam
+                        voluptas voluptates
+                        2014年Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet
+                        atque cum cupiditate deleniti. Adipisci alias error pariatur quia totam.
+                        Adipisci architecto delectus nesciunt sequi. Laudantium rerum veniam
+                        voluptas voluptates
+                        2014年Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet
+                        atque cum cupiditate deleniti. Adipisci alias error pariatur quia totam.
+                        Adipisci architecto delectus nesciunt sequi. Laudantium rerum veniam
+                        voluptas voluptates</p>
+                </div>
+            </div>
+            <!--内容3-->
+            <div class="tab-pane" id="tab3">
+                <div class="well">
+                    <h3>2016</h3>
+                    <p>2014年Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet
+                        atque cum cupiditate deleniti. Adipisci alias error pariatur quia totam.
+                        Adipisci architecto delectus nesciunt sequi. Laudantium rerum veniam
+                        voluptas voluptates!
+                        2014年Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet
+                        atque cum cupiditate deleniti. Adipisci alias error pariatur quia totam.
+                        Adipisci architecto delectus nesciunt sequi. Laudantium rerum veniam
+                        voluptas voluptates
+                        2014年Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet
+                        atque cum cupiditate deleniti. Adipisci alias error pariatur quia totam.
+                        Adipisci architecto delectus nesciunt sequi. Laudantium rerum veniam
+                        voluptas voluptates
+                        2014年Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet
+                        atque cum cupiditate deleniti. Adipisci alias error pariatur quia totam.
+                        Adipisci architecto delectus nesciunt sequi. Laudantium rerum veniam
+                        voluptas voluptates</p>
+                </div>
+            </div>
+            <!--内容4-->
+            <div class="tab-pane" id="tab4">
+                <div class="well">
+                    <h3>2017</h3>
+                    <p>2014年Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet
+                        atque cum cupiditate deleniti. Adipisci alias error pariatur quia totam.
+                        Adipisci architecto delectus nesciunt sequi. Laudantium rerum veniam
+                        voluptas voluptates!
+                        2014年Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet
+                        atque cum cupiditate deleniti. Adipisci alias error pariatur quia totam.
+                        Adipisci architecto delectus nesciunt sequi. Laudantium rerum veniam
+                        voluptas voluptates
+                        2014年Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet
+                        atque cum cupiditate deleniti. Adipisci alias error pariatur quia totam.
+                        Adipisci architecto delectus nesciunt sequi. Laudantium rerum veniam
+                        voluptas voluptates
+                        2014年Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet
+                        atque cum cupiditate deleniti. Adipisci alias error pariatur quia totam.
+                        Adipisci architecto delectus nesciunt sequi. Laudantium rerum veniam
+                        voluptas voluptates</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--底部-->
+<div class="bottom-section">
+    <div class="container">
+        <h3>欢迎来参加我们的婚礼</h3>
+    </div>
+</div>
+<footer class="footer">
+    <div class="container">
+            <div class="copy">
+                <p>Copyright 2014-2017&nbsp;&nbsp;&nbsp;&nbsp;ZJx Hj集团及其附属公司 </p>
+                <p>本网站不做任何商业用途，仅供学习参考使用。</p>
+            </div>
+    </div>
+</footer>
+<div id="bgMusic">
+    <audio src="res/bg.mp3" autoplay loop controls></audio>
+</div>
+<div id="msg" class="hidden-xs">
+    <a href="javascript:down()" class="a1 glyphicon glyphicon-remove"></a>
+    <p>期待您的到来</p>
+    <a href="register.html" class="a2">登记</a>
+</div>
+<script>
+    var msg=document.getElementById("msg");
+    window.onload=function(){
+        msg.style.bottom=0;
+    };
+    function down(){
+        msg.style.bottom="-180px";
+        setTimeout(function(){
+            msg.style.bottom=0;
+        },10000)
+    }
+</script>
+<!--<script>-->
+
+    <!--bgMusic.volume=0.01;-->
+    <!--var v=bgMusic.volume;-->
+   <!--var timer= setInterval(function(){-->
+        <!--v++;-->
+       <!--console.log(v);-->
+        <!--if(v>=1){-->
+            <!--clearInterval(timer);-->
+            <!--timer=null;-->
+        <!--}-->
+    <!--},50)-->
+<!--</script>-->
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/bootlint.js"></script>
+<!--<script>-->
+    <!--bootlint.showLintReportForCurrentDocument([]);-->
+<!--</script>-->
+</body>
+</html>

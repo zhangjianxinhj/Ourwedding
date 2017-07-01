@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <title>登记</title>
+    <link rel="stylesheet" href="css/register.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--头部-->
+<nav class="navbar navbar-default navbar-fixed-top ">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="#" class="navbar-brand">Our Wedding</a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myCollapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse" id="myCollapse">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">首页</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">欢迎<span class="caret"></span> </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="register.html">登记</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">亲人</a></li>
+                        <li><a href="#">同学</a></li>
+                        <li><a href="#">同事</a></li>
+                        <li><a href="#">其他</a></li>
+                    </ul>
+                </li>
+                <li><a href="bless.html">祝福</a></li>
+                <li><a href="#">关于我们</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right" >
+                <li><a href="#mymodal" data-toggle="modal">登录</a></li>
+                <li><a href="login.html">注册</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--登录-->
+<div id="mymodal" class="modal text-center" data-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button data-dismiss="modal" type="button" class="close">&times;</button>
+                <h4> 欢迎登陆</h4>
+            </div>
+            <div class="modal-body">
+                <form action="" class="form-horizontal">
+                    <div class="form-group">
+                        <label for="txtName" class="control-label col-md-2">登录名:</label>
+                        <div class="col-md-7">
+                            <input type="text" id="txtName" class="form-control" value="" placeholder="请输入您的用户名/邮箱/手机号"/>
+                        </div>
+                        <span class="help-block col-md-3">
+                            输入6-18个字符
+                        </span>
+                    </div>
+                    <div class="form-group">
+                        <label for="txtPwd" class="control-label col-md-2">密&nbsp;&nbsp;&nbsp;&nbsp;码:</label>
+                        <div class="col-md-7">
+                            <input type="text" id="txtPwd" class="form-control" value="" placeholder="请输入您的密码"/>
+                        </div>
+                        <div class="col-md-3">
+                            <span class="help-block">字符不能重复</span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <form action="" class="form-inline">
+                    <button type="button" class="btn btn-default">登陆</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">忘记密码</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <ol class="breadcrumb" style="margin-top: 51px">
+        <li><a href="index.html">首页</a></li>
+        <li>&gt;</li>
+        <li class="active">登记</li>
+    </ol>
+</div>
+<div class="container animated fadeInDownBig" >
+    <img src="images/register.jpg" class="img-responsive" alt=""/>
+</div>
+<!--主体-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="reg">
+                <h2>女方亲友</h2>
+                <div class="table-bordered"></div>
+                <p>请填写您的个人信息：</p>
+                <form action="">
+                    <div class="form-group">
+                        <label for="yourname">您的姓名：</label>
+                        <input type="text" class="form-control" id="yourname" placeholder="您的姓名">
+                    </div>
+                    <div class="sex form-group">
+                        <p>您的性别：</p>
+                        <label class="radio-inline">
+                            <input type="radio" name="sex" id="men" value="men"> 男士
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="sex" id="women" value="women"> 女士
+                        </label>
+                    </div>
+                    <div class="city form-inline">
+                        <div class="form-group">
+                            <label class="control-label city" for="city">您来自那个城市：&nbsp;</label>
+                            <select class="form-control" id="city">
+                                <option>北京</option>
+                                <option>天津</option>
+                                <option>廊坊</option>
+                                <option>石家庄</option>
+                                <option>西安</option>
+                                <option>银川</option>
+                                <option>其他</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group way">
+                        <p>您来的方式：</p>
+                        <label class="radio-inline">
+                            <input type="radio" name="way" id="plane" value="plane"> 飞机
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="way" id="High-speed rail" value="High-speed rail"> 高铁
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="way" id="train" value="train"> 火车
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="way" id="drive" value="drive"> 自驾
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="way" id="other" value="other"> 其他
+                        </label>
+                    </div>
+                    <div class="meet form-group">
+                        <p>是否需要接站：</p>
+                        <label class="radio-inline">
+                            <input type="radio" name="meet" id="yes" value="yes"> 是
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="meet" id="no" value="no"> 否
+                        </label>
+                    </div>
+                    <div class="partner form-group">
+                        <p>您的同伴：</p>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="spouse" value="spouse"> 配偶
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="child" value="child"> 孩子
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="parent" value="parent">父母
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="sel" value="self">自己
+                        </label>
+                    </div>
+                    <div class="form-inline contact">
+                        <div class="form-group">
+                            <p>您的联系方式：</p>
+                            <label for="tel">电话：</label>
+                            <input type="text" class="form-control" id="tel" placeholder="您的电话">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">邮箱：</label>
+                            <input type="email" class="form-control" id="email" placeholder="email">
+                        </div>
+                    </div>
+                    <div class="bless form-group">
+                        <p>发送祝福：</p>
+                        <textarea class="form-control" rows="3" placeholder="十年修得同船渡，百年修得共枕眠。于茫茫人海中找到他，分明是千年前的一段缘，祝你俩幸福美满，共谐连理。"></textarea>
+                    </div>
+                    <div class="table-bordered"></div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> 已确认信息
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-success">提交</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="reg">
+                <h2>男方亲友</h2>
+                <div class="table-bordered"></div>
+                <p>请填写您的个人信息：</p>
+                <form action="">
+                    <div class="form-group">
+                        <label for="yourname">您的姓名：</label>
+                        <input type="text" class="form-control" id="yourname1" placeholder="您的姓名">
+                    </div>
+                    <div class="sex form-group">
+                        <p>您的性别：</p>
+                        <label class="radio-inline">
+                            <input type="radio" name="sex" id="men1" value="men"> 男士
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="sex" id="women1" value="women"> 女士
+                        </label>
+                    </div>
+                    <div class="city1 form-inline">
+                        <div class="form-group">
+                            <label class="control-label city" for="city1">您来自那个城市：&nbsp;</label>
+                            <select class="form-control" id="city1">
+                                <option>廊坊</option>
+                                <option>北京</option>
+                                <option>天津</option>
+                                <option>石家庄</option>
+                                <option>西安</option>
+                                <option>银川</option>
+                                <option>其他</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group way">
+                        <p>您来的方式：</p>
+                        <label class="radio-inline">
+                            <input type="radio" name="way" id="High-speed rail1" value="High-speed rail1"> 高铁
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="way" id="train1" value="train1"> 火车
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="way" id="drive1" value="drive1"> 自驾
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="way" id="other1" value="other1"> 其他
+                        </label>
+                    </div>
+                    <div class="meet form-group">
+                        <p>是否需要接站：</p>
+                        <label class="radio-inline">
+                            <input type="radio" name="meet" id="yes1" value="yes"> 是
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="meet" id="no1" value="no"> 否
+                        </label>
+                    </div>
+                    <div class="partner form-group">
+                        <p>您的同伴：</p>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="spouse1" value="spouse"> 配偶
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="child1" value="child"> 孩子
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="parent1" value="parent">父母
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" id="sel1" value="self1">自己
+                        </label>
+                    </div>
+                    <div class="form-inline contact">
+                        <div class="form-group">
+                            <p>您的联系方式：</p>
+                            <label for="tel">电话：</label>
+                            <input type="text" class="form-control" id="tel1" placeholder="您的电话">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">邮箱：</label>
+                            <input type="email" class="form-control" id="email1" placeholder="email">
+                        </div>
+                    </div>
+                    <div class="bless form-group">
+                        <p>发送祝福：</p>
+                        <textarea class="form-control" rows="3" placeholder="祝你们永结同心，百年好合！新婚愉快，甜甜蜜蜜！夫妻恩恩爱爱到永远！"></textarea>
+                    </div>
+                    <div class="table-bordered"></div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> 已确认信息
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-success">提交</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--底部-->
+<div class="bottom-section">
+    <div class="container">
+        <h3>欢迎来加我们的婚礼</h3>
+    </div>
+</div>
+<footer class="footer">
+    <div class="container">
+        <div class="copy">
+            <p>Copyright 2014-2017&nbsp;&nbsp;&nbsp;&nbsp;ZJx Hj集团及其附属公司 </p>
+            <p>本网站不做任何商业用途，仅供学习参考使用。</p>
+        </div>
+    </div>
+</footer>
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/bootlint.js"></script>
+<!--<script>-->
+    <!--bootlint.showLintReportForCurrentDocument([]);-->
+<!--</script>-->
+</body>
+</html>
